@@ -11,7 +11,7 @@ VALUES ('table', 124.00, 'f');
 -- 4. Display all of the rows and columns in the table.
 SELECT * FROM products;
 -- 5. Display all of the names of the products.
-
+SELECT name FROM products;
 -- 6. Display all of the names and prices of the products.
 
 -- 7. Add a new product - make up whatever you would like!
