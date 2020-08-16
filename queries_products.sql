@@ -9,7 +9,7 @@ VALUES ('stool', 25.99, 't');
 INSERT INTO products (name, price, can_be_returned) 
 VALUES ('table', 124.00, 'f');
 -- 4. Display all of the rows and columns in the table.
-
+SELECT * FROM products;
 -- 5. Display all of the names of the products.
 
 -- 6. Display all of the names and prices of the products.
