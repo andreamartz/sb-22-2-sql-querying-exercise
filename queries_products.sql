@@ -17,7 +17,7 @@ SELECT name, price FROM products;
 -- 7. Add a new product - make up whatever you would like!
 INSERT INTO products (name, price, can_be_returned) VALUES ('mattress', 599.99, 'f');
 -- 8. Display only the products that can_be_returned.
-
+SELECT * FROM products WHERE can_be_returned = true;
 -- 9. Display only the products that have a price less than 44.00.
 
 -- 10. Display only the products that have a price in between 22.50 and 99.99.
