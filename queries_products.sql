@@ -15,7 +15,7 @@ SELECT name FROM products;
 -- 6. Display all of the names and prices of the products.
 SELECT name, price FROM products;
 -- 7. Add a new product - make up whatever you would like!
-
+INSERT INTO products (name, price, can_be_returned) VALUES ('mattress', 599.99, 'f');
 -- 8. Display only the products that can_be_returned.
 
 -- 9. Display only the products that have a price less than 44.00.
