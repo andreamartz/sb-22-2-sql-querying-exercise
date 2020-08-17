@@ -29,7 +29,10 @@ SELECT app_name, price, rating FROM analytics
   ORDER BY price DESC 
   LIMIT 1;
 -- 8. Find all apps with a min install not exceeding 50, that have a rating. Order your results by highest rated first.
-
+SELECT * FROM analytics 
+  WHERE min_installs <= 50 
+    AND rating IS NOT NULL
+  ORDER BY rating DESC;
 -- 9. Find the names of all apps that are rated less than 3 with at least 10000 reviews.
 
 -- 10. Find the top 10 most-reviewed apps that cost between 10 cents and a dollar.
