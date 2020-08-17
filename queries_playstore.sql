@@ -38,7 +38,11 @@ SELECT app_name FROM analytics
   WHERE rating < 3 
     AND reviews >= 10000;
 -- 10. Find the top 10 most-reviewed apps that cost between 10 cents and a dollar.
-
+SELECT * FROM analytics 
+  WHERE price 
+    BETWEEN .1 AND 1 
+  ORDER BY reviews DESC 
+  LIMIT 10;
 -- 11. Find the most out of date app. Hint: You don’t need to do it this way, but it’s possible to do with a subquery: http://www.postgresqltutorial.com/postgresql-max-function/
 
 -- 12. Find the most expensive app (the query is very similar to #11).
