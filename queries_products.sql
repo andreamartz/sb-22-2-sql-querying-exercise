@@ -29,3 +29,4 @@ DELETE FROM products WHERE price < 25;
 -- 13. And now the sale is over. For the remaining products, increase their price by $20.
 UPDATE products SET price = price + 20;
 -- 14. There is a new company policy: everything is returnable. Update the database accordingly.
+UPDATE products SET can_be_returned = true;
