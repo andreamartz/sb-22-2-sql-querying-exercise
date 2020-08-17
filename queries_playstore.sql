@@ -10,7 +10,10 @@ SELECT category, COUNT(*)
   FROM analytics
   GROUP BY category;
 -- 4. Find the top 5 most-reviewed apps and the number of reviews for each.
-
+SELECT app_name, reviews 
+  FROM analytics 
+  ORDER BY reviews DESC
+  LIMIT 5; 
 -- 5. Find the app that has the most reviews with a rating greater than equal to 4.8.
 
 -- 6. Find the average rating for each category ordered by the highest rated to lowest rated.
