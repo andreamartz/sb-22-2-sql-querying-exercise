@@ -15,9 +15,14 @@ SELECT app_name, reviews
   ORDER BY reviews DESC
   LIMIT 5; 
 -- 5. Find the app that has the most reviews with a rating greater than equal to 4.8.
-SELECT * FROM analytics WHERE rating >= 4.8 ORDER BY reviews DESC LIMIT 1;
+SELECT * FROM analytics 
+  WHERE rating >= 4.8 
+  ORDER BY reviews DESC 
+  LIMIT 1;
 -- 6. Find the average rating for each category ordered by the highest rated to lowest rated.
-
+SELECT category, AVG(rating) FROM analytics 
+  GROUP BY category 
+  ORDER BY AVG(rating) DESC;
 -- 7. Find the name, price, and rating of the most expensive app with a rating that’s less than 3.
 
 -- 8. Find all apps with a min install not exceeding 50, that have a rating. Order your results by highest rated first.
