@@ -47,7 +47,7 @@ SELECT * FROM analytics
 SELECT * FROM analytics 
   WHERE last_updated = (SELECT MIN(last_updated) FROM analytics);
 -- 12. Find the most expensive app (the query is very similar to #11).
-
+SELECT * FROM analytics WHERE price = (SELECT MAX(price) FROM analytics);
 -- 13. Count all the reviews in the Google Play Store.
 
 -- 14. Find all the categories that have more than 300 apps in them.
