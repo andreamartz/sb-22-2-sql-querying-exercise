@@ -1,32 +1,32 @@
 -- Comments in SQL Start with dash-dash --
--- Find the app with an ID of 1880.
+-- 1. Find the app with an ID of 1880.
 SELECT * FROM analytics WHERE id = 1880;
--- Find the ID and app name for all apps that were last updated on August 01, 2018.
+-- 2. Find the ID and app name for all apps that were last updated on August 01, 2018.
 SELECT id, app_name 
   FROM analytics 
   WHERE last_updated = '2018-08-01';
--- Count the number of apps in each category, e.g. “Family | 1972”.
+-- 3. Count the number of apps in each category, e.g. “Family | 1972”.
 
--- Find the top 5 most-reviewed apps and the number of reviews for each.
+-- 4. Find the top 5 most-reviewed apps and the number of reviews for each.
 
--- Find the app that has the most reviews with a rating greater than equal to 4.8.
+-- 5. Find the app that has the most reviews with a rating greater than equal to 4.8.
 
--- Find the average rating for each category ordered by the highest rated to lowest rated.
+-- 6. Find the average rating for each category ordered by the highest rated to lowest rated.
 
--- Find the name, price, and rating of the most expensive app with a rating that’s less than 3.
+-- 7. Find the name, price, and rating of the most expensive app with a rating that’s less than 3.
 
--- Find all apps with a min install not exceeding 50, that have a rating. Order your results by highest rated first.
+-- 8. Find all apps with a min install not exceeding 50, that have a rating. Order your results by highest rated first.
 
--- Find the names of all apps that are rated less than 3 with at least 10000 reviews.
+-- 9. Find the names of all apps that are rated less than 3 with at least 10000 reviews.
 
--- Find the top 10 most-reviewed apps that cost between 10 cents and a dollar.
+-- 10. Find the top 10 most-reviewed apps that cost between 10 cents and a dollar.
 
--- Find the most out of date app. Hint: You don’t need to do it this way, but it’s possible to do with a subquery: http://www.postgresqltutorial.com/postgresql-max-function/
+-- 11. Find the most out of date app. Hint: You don’t need to do it this way, but it’s possible to do with a subquery: http://www.postgresqltutorial.com/postgresql-max-function/
 
--- Find the most expensive app (the query is very similar to #11).
+-- 12. Find the most expensive app (the query is very similar to #11).
 
--- Count all the reviews in the Google Play Store.
+-- 13. Count all the reviews in the Google Play Store.
 
--- Find all the categories that have more than 300 apps in them.
+-- 14. Find all the categories that have more than 300 apps in them.
 
--- Find the app that has the highest proportion of min_installs to reviews, among apps that have been installed at least -- 100,000 times. Display the name of the app along with the number of reviews, the min_installs, and the proportion.
+-- 15. Find the app that has the highest proportion of min_installs to reviews, among apps that have been installed at least -- 100,000 times. Display the name of the app along with the number of reviews, the min_installs, and the proportion.
