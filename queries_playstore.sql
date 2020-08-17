@@ -44,7 +44,8 @@ SELECT * FROM analytics
   ORDER BY reviews DESC 
   LIMIT 10;
 -- 11. Find the most out of date app. Hint: You don’t need to do it this way, but it’s possible to do with a subquery: http://www.postgresqltutorial.com/postgresql-max-function/
-
+SELECT * FROM analytics 
+  WHERE last_updated = (SELECT MIN(last_updated) FROM analytics);
 -- 12. Find the most expensive app (the query is very similar to #11).
 
 -- 13. Count all the reviews in the Google Play Store.
