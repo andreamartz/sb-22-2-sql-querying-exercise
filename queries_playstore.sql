@@ -6,7 +6,9 @@ SELECT id, app_name
   FROM analytics 
   WHERE last_updated = '2018-08-01';
 -- 3. Count the number of apps in each category, e.g. “Family | 1972”.
-
+SELECT category, COUNT(*)
+  FROM analytics
+  GROUP BY category;
 -- 4. Find the top 5 most-reviewed apps and the number of reviews for each.
 
 -- 5. Find the app that has the most reviews with a rating greater than equal to 4.8.
